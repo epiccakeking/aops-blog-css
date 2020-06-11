@@ -1,0 +1,93 @@
+/*Adaptive (v1.0) by happycupcake
+Do not remove this statement if you use the code in part or as a whole.*/
+#wrapper{
+  width: 100%;
+  background: none;
+  padding-left: 270px;
+}
+.entrywrap{
+  background: none !important;
+  border: none !important;
+  margin: 0px !important;
+}
+.entry{
+  background: white;
+  box-shadow: 0px 5px 10px rgba(0,0,0,.75);
+  margin-bottom: 20px;
+  border: none !important;
+  padding: 10px !important;
+}
+#main{
+  width: 100%;
+  padding: 10px;
+}
+#side{
+  position: fixed;
+  top: 22px;
+  bottom: 0px;
+  left: 0px;
+  background: #f3f3f3;
+  z-index: 100;
+  height: auto;
+  overflow: auto;
+  width: 270px;
+  overscroll-behavior: contain;
+}
+#header{
+  border: none;
+}
+#navigation_box{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border: none;
+}
+#right_navigation_box > a.blog-info{
+  display: inline-block !important;
+}
+#wrapper{
+  padding-top: 22px !important;
+}
+@media (max-width:600px){
+  #side{
+    top: 45px;
+  }
+  #left_navigation_box,
+  #right_navigation_box{
+    width: 100%;
+    text-align: left;
+  }
+  #navigation_box{
+    height: 45px;
+  }
+  #wrapper{
+    padding-top: 45px !important;
+  }
+}
+@media (max-width:800px){
+  #side{
+    left:-270px;
+  }
+  #side::before{
+    content: '>';
+    position: fixed;
+    left: 0px;
+    top: 80px;
+    font-size: 3rem;
+    background: #f3f3f3;
+    height: 2rem;
+    line-height: 2rem;
+    z-index: 100;
+    border-radius: 0rem 1rem 1rem 0rem;
+    box-shadow: 0px 0px 0.5rem rgba(0,0,0,.5);
+  }
+  #side:hover{
+    left: 0px;
+  }
+  #side:hover::before{
+    display: none;
+  }
+  #wrapper{
+    padding-left: 0px;
+  }
+}
