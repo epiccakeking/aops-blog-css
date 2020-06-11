@@ -1,0 +1,211 @@
+/*Ancient Unnamed by happycupcake.
+Keep this entire comment if the code is used in part or as a whole.*/
+
+#wrapper{
+  background: white !important; /*Remove the background from wrapper*/
+  padding: 0px; /*Removes the padding*/
+  border: 0px; /*Removes the really thin border*/
+}
+/*Make the shout text box resizable only vertically*/
+#message{
+  resize: vertical;
+  width: 200px;
+}
+/*Shouts*/
+/*Username colors*/
+.cmty-post .cmty-user-admin a,
+.cmty-post .cmty-user-admin:before {
+	color : #356cb5 !important;
+}
+
+.cmty-post-username a{
+	color: black !important;
+}
+
+.cmty-forum-admin a {
+	color: #990000 !important;
+}
+
+.cmty-forum-mod a {
+	color: #009900 !important;
+}
+/*Navbar*/
+#left_navigation_box > a:nth-child(3):not(:nth-last-child(1)):after{
+  content: "back to blog";
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  height: 20px;
+  line-height: 20px;
+}
+#navigation_box{
+  position: fixed;
+  height: 20px;
+  border: none;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+}
+.blog-info{
+  display: inline !important;
+}
+#left_navigation_box{
+  width: 0px;
+  padding: 0px;
+  margin:0px;
+  height: 0px;
+  overflow: hidden;
+}
+html, #wrapper, body{
+  width: 100% !important;
+}
+/*Testing*/
+#main{
+  padding-top: 20px;
+  width: 100% !important;
+}
+#header{
+  width: 100vw;
+  height: 500px;
+  max-height: 50vh;
+  padding: 0px !important;
+  margin: 0px !important;
+  overflow: visible;
+  background-image: url(https://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvYi81LzI1YTkyZTc3NDY1MzU2Y2VkZGE5YzdiMDVhYzYwOTc5MzVmM2E5LmpwZw==&rn=SU1HXzIwMTgwMzE1XzE1MDUxNiBDcm9wcGVkLmpwZw==);
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-width: 0px !important;
+  margin-bottom: 100px !important;
+}
+#header::after{
+  content: "";
+  width: 100px !important;
+  height: 100px !important;
+  background-color: white;
+  border-radius: 50px;
+  border: none;
+  background-image: url(https://avatar.artofproblemsolving.com/avatar_242975.png);
+  background-size: cover !important;
+  margin: 0px;
+  display: block !important;
+  top: calc(100% - 50px);
+  left: calc(50% - 50px) !important;
+  position: absolute;
+}
+#header > *{
+  display: none;
+}
+@media (max-width: 600px) {
+  /*Makeshift solution to hide the sidebar on small screens */
+#main::after{
+  content:"X";
+  background: lightgray;
+  position: fixed;
+  top: 80px;
+  left: 0px;
+  height: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  border-radius: 0px 15px 15px 0px;
+  text-align: center;
+  width: 50px;
+  z-index: 1005 !important;
+}
+
+}
+#side:not(:hover)::after{
+  content:">";
+  background: lightgray;
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  height: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  border-radius: 0px 15px 15px 0px;
+  text-align: center;
+  width: 50px;
+  z-index: 1005 !important;
+}
+#side{
+  position: fixed;
+  top: 20px;
+  left: -300px;
+  background: lightgray;
+  height: 100vh; /*Fallback if calc not supported*/
+  height: calc(100vh - 20px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 250px !important;
+  padding-right: 100px; /*Forces the widgets to their minimum widths*/
+  overflow: visible !important;
+  padding-top: 100px;
+  z-index: 1000; /*So it stays on top*/
+}
+#side:hover{
+  left: 0px;
+}
+/*Entries*/
+.entry{
+  margin: 10px !important;
+  margin-top: 30px !important;
+  background: rgb(240,240,240) !important;
+  border-radius: 10px;
+  padding: 5px !important;
+  border: none !important;
+}
+.entrywrap{
+  background: none !important;
+  border: none !important;
+}
+/*Archive*/
+.archive-row{
+  width: 250px;
+}
+/*Widgets*/
+.widget-content{
+  display: none;
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 100vh !important; /*Backup if calc not supported*/
+  height: calc(100vh - 20px) !important; /*SO the bottom isn't off the screen*/
+  top: 20px;
+  background: lightgray !important;
+}
+#shouts-widget .widget-content{
+  height: calc(100vh - 60px) !important;
+}
+#archive-widget .widget-content{
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+}
+.blog-num-shouts{
+  display: block;
+  width: 250px !important;
+  height: 60px !important;
+  background: lightgray !important;
+}
+#side > div:hover > .widget-content{
+  display: block;
+}
+#side > div{
+  overflow: visible !important;
+  width: 250px !important;
+}
+.blog-shout-wrapper{
+  height: 100% !important;
+}
+#side > div:not(#shouts-widget){
+  height: 50px !important;
+  margin: 0px !important;
+}
+.blog-tags-wrapper{
+  height: 100%;
+}
+#user-menu-widget{
+  display: none;
+}
