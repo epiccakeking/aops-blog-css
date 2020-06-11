@@ -1,0 +1,40 @@
+/*Custom post elements by happycupcake. Please do not remove this information if used.*/
+span[style="font-family:'custom-math-question'"]{
+  display: block !important;
+  background-color: #cbe86c;
+  margin: 20px 10px;
+  padding: 20px 30px;
+  border: 1px solid #82b44a;
+  font-family: "Roboto", sans-serif !important;
+}
+span[style="font-family:'custom-math-solution'"]{
+  display: block;
+  background-color: #eee;
+  margin: 20px 10px;
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  font-family: "Roboto", sans-serif !important;
+}
+span[style="font-family:'custom-panelset'"]{
+  display: table !important;
+  width: 100% !important;
+  border: 2px solid black;
+}
+span[style="font-family:'custom-panelset'"] > .aops-font{
+  display: table-row !important;
+  width: 100% !important;
+}
+span[style="font-family:'custom-panel'"]{
+  display: table-cell !important;
+  border: 2px solid black;
+  vertical-align: top;
+}
+span[style*="font-family:'custom"] > .aops-font{
+  font-family: "Roboto", sans-serif !important;
+}
+span[style="font-family:'custom-float-left'"]{
+  float: left !important;
+}
+span[style="font-family:'custom-float-right'"]{
+  float: left !important;
+}
