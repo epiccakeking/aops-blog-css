@@ -1,0 +1,212 @@
+/*Terriblerest by happycupcake
+Keep this entire comment if the code is used in part or as a whole.*/
+
+/*Main CSS*/
+#wrapper{
+  background-image: none !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+#navigation_box{
+  position: fixed;
+  top: 0px;
+  background-color: white !important;
+  height: 20px !important;
+  z-index: 100000000000000000000000 !important;
+  border: none !important;
+  overflow: hidden;
+}
+#navigation_box *{
+  color: black !important;
+}
+.archive-row > a{
+  color: black;
+}
+.cmty-forum-admin > a{
+  color: #990000 !important;
+}
+.cmty-forum-mod > a{
+  color: #009900 !important;
+}
+.entrywrap, .comment{
+  background-color: rgba(0,0,0,0.2) !important;
+  color: black;
+  border: none !important;
+}
+
+#contrib-widget{
+  position: relative !important;
+  top: 20px !important;
+  left: 0px !important;
+  display: table-caption !important;
+  margin: 0px !important;
+  margin-top: 20px !important;
+}
+#side {
+   display: table !important;
+}
+body{
+  background-color: white !important;
+}
+.description, .widget-title, .archive-month-header{
+  color: black;
+}
+#message{
+  background-color: rgba(0,0,0,0.2) !important;
+  border: transparent !important;
+  color: black;
+  width: 100% !important;
+}
+#shouts-widget > .widget-content > .blog-shout-wrapper{
+  border: transparent !important;
+}
+.blog-shout.row1{
+  background-color: rgba(0,0,0,0.2) !important;
+}
+.blog-shout.row2{
+  background-color: rgba(0,0,0,0.25) !important;
+}
+.blog-shout{
+  color: black;
+}
+#search-widget .widget-settings{
+  display: none !important;
+}
+#search-widget{
+  background-color: rgba(0,0,0,0.35) !important;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: none !important;
+  position: fixed !important;
+  top: 20px !important;
+  left: 0px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+#blog_searchform > * > *{
+  border: none !important;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0px !important;
+  margin: 0px !important;
+  border: none !important;
+}
+#blog_searchform > *{
+  border: none !important;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0px !important;
+  margin: 0px !important;
+  border: none !important;
+}
+#search-widget > *{
+  padding: 0px !important;
+  margin: 0px !important;
+  width: auto !important;
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: none !important;
+}
+#search-widget > * > *{
+  padding: 0px !important;
+  margin: 0px !important;
+  width: auto;
+  height: auto;
+}
+.widget-content{
+  color: black;
+}
+#wrapper .cmty-item-tag{
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px 2px black !important;
+  background-color: white !important;
+  border: none !important;
+}
+/*Username mod/admin colors*/
+#feed-wrapper .cmty-post-username>a{
+  color: black !important;
+}
+#feed-wrapper .cmty-post-username.cmty-forum-admin>a{
+  color: #990000 !important;
+}
+#feed-wrapper .cmty-post-username.cmty-forum-mod>a{
+  color: #009900!important;
+}
+#page-wrapper{
+  background-color: white !important;
+  margin-top: 300px !important;
+}
+#header{
+  background-color: black;
+  width: 100vw !important;
+  height: 300px !important;
+  padding: 0px !important;
+  border: none !important;
+  line-height: 300px !important;
+  background-image: url("https://cdn.artofproblemsolving.com/attachments/b/5/25a92e77465356cedda9c7b05ac6097935f3a9.jpg") !important;
+  background-size: auto 300px;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  clip-path: polygon(0 0,100% 0,100% 100%,0 100%)!important;
+  position: absolute !important;
+}
+#header h1{
+  color: white!important;
+  position: fixed !important;
+  width: 100vw;
+  height: 300px;
+  font-size: 1em !important;
+  text-decoration: none !important;
+  background-image: linear-gradient(to bottom right, white, gray) !important;
+  color: transparent !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  text-shadow: none !important;
+}
+.entry .cmty-post-edit-info{
+  opacity: 0;
+  transition: opacity 1s;
+}
+.entry:hover .cmty-post-edit-info{
+  opacity: 1;
+}
+
+
+div:nth-child(1n) > .entry .post-comment::before{
+  content: "Why don't you comment?" !important;
+}
+div:nth-child(2n) > .entry .post-comment::before{
+  content: "Make a comment." !important;
+}
+div:nth-child(3n) > .entry .post-comment::before{
+  content: "Please comment?" !important;
+}
+div:nth-child(5n) > .entry .post-comment::before{
+  content: "Gimme all dem comments." !important;
+}
+html{
+  animation: zoom 4s;
+}
+@keyframes zoom{
+  0%{
+    height: 100vh;
+    transform: scale(0);
+    opacity: 0;
+  }
+  25%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  100%{
+    height: 100vh;
+    transform: none;
+    opacity: 1;
+  }
+}
