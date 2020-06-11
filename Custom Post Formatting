@@ -1,0 +1,55 @@
+/*Custom Post Formatting (CPF) v2.1 by happycupcake. Please do not remove this information if used.
+If modified from the original please change No to Yes on the next line.
+Modified: No
+Contributors: happycupcake, riben
+*/
+span[style^="font-family:'cpf"] > .aops-font{
+  font-family: "Roboto", sans-serif !important;
+}
+span[style="font-family:'cpf-question'"]{
+  display: block !important;
+  background-color: #cbe86c;
+  margin: 20px 10px;
+  padding: 20px 30px;
+  border: 1px solid #82b44a;
+  font-family: "Roboto", sans-serif !important;
+}
+span[style="font-family:'cpf-solution'"]{
+  display: block;
+  background-color: #eee;
+  margin: 20px 10px;
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  font-family: "Roboto", sans-serif !important;
+}
+span[style="font-family:'cpf-table'"]{
+  display: table !important;
+  width: 100% !important;
+  border: 2px solid black;
+}
+span[style="font-family:'cpf-table"] > .aops-font{
+  display: table-row !important;
+  width: 100% !important;
+}
+span[style="font-family:'cpf-tablecell'"]{
+  display: table-cell !important;
+  border: 2px solid black;
+  vertical-align: top;
+}
+span[style="font-family:'cpf-float-left'"]{
+  float: left !important;
+}
+span[style="font-family:'cpf-float-right'"]{
+  float: left !important;
+}
+span[style="font-family:'cpf-highlight'"]{
+  background-color: yellow;
+}
+span[style="font-family:'cpf-emoji'"] > img{
+  height: 20px !important;
+  width: auto !important;
+}
+span[style="font-family:'cpf-spoiler'"]{
+  background: black !important;
+  color: black !important;
+}
