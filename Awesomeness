@@ -1,0 +1,276 @@
+/*Awesomeness by happycupcake.
+Keep this entire comment if the code is used in part or as a whole.*/
+
+/*Main CSS*/
+
+#wrapper{
+  background-image: none !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+#navigation_box{
+  position: fixed;
+  top: 0px;
+  background-color: black !important;
+  height: 20px !important;
+  z-index: 100000000000000000000000 !important;
+  border: none !important;
+  overflow: hidden;
+}
+.archive-row > a{
+  color: white;
+}
+.cmty-forum-admin > a{
+  color: #990000 !important;
+}
+.cmty-forum-mod > a{
+  color: #009900 !important;
+}
+.entrywrap, .comment{
+  background-color: rgba(255,255,255,0.2) !important;
+  color: white;
+  border: none !important;
+}
+
+#contrib-widget{
+  position: relative !important;
+  top: 20px !important;
+  left: 0px !important;
+  display: table-caption !important;
+  margin: 0px !important;
+  margin-top: 20px !important;
+}
+#side {
+   display: table !important;
+}
+body{
+  background-color: black !important;
+}
+.description, .widget-title, .archive-month-header{
+  color: white;
+}
+#message{
+  background-color: rgba(255,255,255,0.2) !important;
+  border: transparent !important;
+  color: white;
+  width: 100% !important;
+}
+#shouts-widget > .widget-content > .blog-shout-wrapper{
+  border: transparent !important;
+}
+.blog-shout.row1{
+  background-color: rgba(255,255,255,0.2) !important;
+}
+.blog-shout.row2{
+  background-color: rgba(255,255,255,0.25) !important;
+}
+.blog-shout{
+  color: white;
+}
+/*Some code that does a ton of stuff to fix python, quotes, and hides being white. For now doesn't affect feed*/
+#main .cmty-hide-content, #main .cmty-poll-display, #main .bbcode_quote{
+  background-color: rgba(255,255,255,0.1) !important;
+}
+#main .python, [id*="updated-pywindow"] > *{
+  filter: invert(100%) !important;
+}
+#main [id*="updated-pywindow"] > [id*="updated-pywindow"].error{
+  color: white !important
+}
+#main .bbcode_quote > *{
+  color: white;
+}
+#search-widget .widget-settings{
+  display: none !important;
+}
+#search-widget{
+  background-color: rgba(255,255,255,0.35) !important;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: none !important;
+  position: fixed !important;
+  top: 20px !important;
+  left: 0px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+#blog_searchform > * > *{
+  border: none !important;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0px !important;
+  margin: 0px !important;
+  border: none !important;
+}
+#blog_searchform > *{
+  border: none !important;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0px !important;
+  margin: 0px !important;
+  border: none !important;
+  filter: invert(100%)
+}
+#search-widget > *{
+  padding: 0px !important;
+  margin: 0px !important;
+  width: auto !important;
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: none !important;
+}
+#search-widget > * > *{
+  padding: 0px !important;
+  margin: 0px !important;
+  width: auto;
+  height: auto;
+}
+.widget-content{
+  color: white;
+}
+#wrapper .cmty-item-tag{
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px 2px white !important;
+  background-color: black !important;
+  border: none !important;
+}
+/*Username mod/admin colors*/
+#feed-wrapper .cmty-post-username>a{
+  color: black !important;
+}
+#feed-wrapper .cmty-post-username.cmty-forum-admin>a{
+  color: #990000 !important;
+}
+#feed-wrapper .cmty-post-username.cmty-forum-mod>a{
+  color: #009900!important;
+}
+#page-wrapper{
+  background-color: black !important;
+  margin-top: 300px !important;
+}
+#header{
+  background-color: black;
+  width: 100vw !important;
+  height: 300px !important;
+  padding: 0px !important;
+  border: none !important;
+  line-height: 300px !important;
+  background-image: url("https://cdn.artofproblemsolving.com/attachments/5/e/6d2d3fb817094cadb04a0645e01dccd412354d.jpg") !important;
+  background-size: auto 300px;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  clip-path: polygon(0 0,100% 0,100% 100%,0 100%)!important;
+  position: absolute !important;
+}
+#header h1{
+  color: white!important;
+  position: fixed !important;
+  width: 100vw;
+  height: 300px;
+  font-size: 1em !important;
+  text-decoration: none !important;
+  background-image: linear-gradient(to bottom right, lightgray, gray) !important;
+  color: transparent !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  text-shadow: none !important;
+}
+.entry .cmty-post-edit-info{
+  opacity: 0;
+  transition: opacity 1s;
+}
+.entry:hover .cmty-post-edit-info{
+  opacity: 1;
+}
+
+
+div:nth-child(1n) > .entry .post-comment::before{
+  content: "Why don't you comment?" !important;
+}
+div:nth-child(2n) > .entry .post-comment::before{
+  content: "Make a comment." !important;
+}
+div:nth-child(3n) > .entry .post-comment::before{
+  content: "Please comment?" !important;
+}
+div:nth-child(5n) > .entry .post-comment::before{
+  content: "Gimme all dem comments." !important;
+}
+/*Loading bar by happycupcake. Give credit if used.*/
+@keyframes fakeloadinganimation{
+  0%{
+    width: 0px;
+    top: calc(50vh - 50px);
+    content: "Loading... please wait";
+    transition: ease;
+    text-align: left;
+  }
+  75%{
+    width: 300px;
+    top: calc(50vh - 50px);
+    content: "Loading... please wait";
+    text-align: left;
+  }
+  75.1%{
+    width: 300px;
+    top: calc(50vh - 50px);
+    content: "Done!";
+    text-align: center;
+  }
+  85%{
+    top: calc(50vh - 100px);
+    width: 300px;
+    content: "Done!";
+    text-align: center;
+  }
+  100%{
+    top: calc(150vh - 50px);
+    width: 300px;
+    content: "Done!";
+    text-align: center;
+  }
+}
+html::before{
+  content: "Loading... please wait";
+  height: 100px;
+  position: fixed !important;
+  margin: 0px;
+  padding: 0px;
+  top: calc(150vh - 50px);
+  left: calc(50vw - 150px);
+  background-color: black;
+  color: white !important;
+  line-height: 100px;
+  white-space: nowrap;
+  font-size: 30px !important;
+  z-index: 1000000000 !important;
+  animation: fakeloadinganimation 2s ease !important;
+  width: 300px !important;
+  box-shadow: 0px 0px 0px 5px white, 0px 50vw 0px calc(50vw + 50vh - 50px) black, 0px 0px 0px 5px white !important; /*The box shadow that makes the border is put before and after the background shadow, because of order issues (Firefox displays the first one on top, chrome displays the last one on top)*/
+  display: block !important;
+}
+html::after{
+  content: "Loading... please wait";
+  height: 100px;
+  width: 0px;
+  position: fixed !important;
+  margin: 0px;
+  padding: 0px;
+    top: calc(150vh - 50px);
+  left: calc(50vw - 150px);
+  background-color: white;
+  color: black !important;
+  line-height: 100px;
+  z-index: 1000000001 !important;
+  white-space: nowrap;
+  font-size: 30px !important;
+  animation: fakeloadinganimation 2s ease !important;
+  overflow: hidden !important;
+}
