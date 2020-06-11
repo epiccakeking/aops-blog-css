@@ -1,0 +1,194 @@
+/*Creative Name by happycupcake.
+Inspired by material design
+Keep this entire comment if the code is used in part or as a whole.*/
+/*Username coloration from https://artofproblemsolving.com/assets/dist/v729/css/community_common.css*/
+.cmty-post-left a {
+ color:#000;
+}
+.cmty-post .cmty-user-admin a,
+.cmty-post .cmty-user-admin:before {
+ color:#009fad;
+}
+.cmty-forum-admin a {
+ color:#900;
+}
+.cmty-forum-mod a {
+ color:#090;
+}
+/* ~ ~ ~ ~ ~ Main ~ ~ ~ ~ ~ */
+#wrapper{
+  background: white !important;
+  width: 100% !important;
+  text-align: center;
+}
+#content{
+  width: 100%;
+  max-width: 1000px;
+  display: inline-block !important;
+  padding: 10px;
+}
+#main{
+  width: 100%;
+  text-align: left !important;
+}
+.entry{
+  background: white !important;
+  box-shadow: 0px 10px 20px rgba(0,0,0,.5);
+  padding: 5px;
+  border: none !important;
+  max-width: 1000px;
+  width: 100%;
+}
+.cmty-poll-display{
+  background: #eee;
+  border: none;
+}
+.entrywrap{
+  border: none !important;
+  background: none !important;
+}
+/* ~ ~ ~ ~ ~ Side ~ ~ ~ ~ ~ */
+#side:before{
+  cursor: pointer;
+  transition: left 0s 86400s;
+  display: block;
+  position: fixed;
+  top: 0px !important;
+  left: -0.01px;
+  content: ">" !important;
+  text-align: center !important;
+  height: 1cm;
+  width: 1cm;
+  font-size: 1cm;
+  line-height: 1cm;
+  border-radius: 0px !important;
+  background: #eee;
+}
+#side:active::before{
+  transition: left 0s;
+  left: -300px;
+}
+#wrapper:active #side:not(:active)::before{
+  transition: left 0s !important;
+  left: 0px;
+}
+#side{
+  overscroll-behavior: none !important;
+  background: lightgray;
+  display: block !important;
+  position: fixed !important;
+  left: -300.01px;
+  top: 1cm !important;
+  transition: left  0s 86400s;
+  overflow: auto;
+  height: auto;
+  bottom: 0px;
+  z-index: 10000000;
+  width: 300px !important;
+}
+#side:active{
+  transition: left 0s;
+  left: 0px;
+}
+#wrapper:active #side:not(:active){
+  transition: left 0s !important;
+  left: -300px;
+}
+#main:before{
+  content: "";
+  position: fixed;
+  top: 1cm !important;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(0,0,0,.5) !important;
+  z-index: 10000000;
+  transition: height  0s 86400s;
+  height: 0.01px;
+}
+#content:active #main:not(:active):before{
+  transition: height 0s !important;
+  height: 100vh;
+}
+#main:active:before{
+  transition: height 0s !important;
+  height: 0px;
+}
+#main:after{
+  cursor: pointer;
+  transition: left 0s 86400s;
+  display: block;
+  position: fixed;
+  top: 0px !important;
+  left: 0px;
+  content: "<" !important;
+  text-align: center !important;
+  height: 1cm;
+  width: 1cm;
+  font-size: 1cm;
+  line-height: 1cm;
+  border-radius: 0px !important;
+  z-index: 1000000;
+  background: #eee;
+}
+#navigation_box{
+  height: 1cm !important;
+  position: fixed;
+  top: 0px;
+  padding-left: 10px;
+  padding-right: 1cm;
+  margin-left: 1cm;
+  background: #eee;
+  border: none !important;
+  box-shadow: -1cm 0px 10px;
+}
+#navigation_box *{
+  color: black !important;
+}
+/* - - - - - - - - - - Experimental! - - - - - - - - - - */
+#user-menu-widget .avatar,
+#user-menu-widget .user-full{
+  display: none;
+}
+/* ~ ~ ~ ~ ~ Modals ~ ~ ~ ~ ~ */
+.aops-modal-wrapper{
+  z-index: 100000000 !important;
+}
+/* ~ ~ ~ ~ ~ Archives by happycupcake ~ ~ ~ ~ ~ */
+.month-image{
+  background: url(https://fonts.gstatic.com/s/i/materialicons/expand_more/v1/24px.svg) !important;
+  background-size: contain !important;
+  padding-left: 16px;
+  width: 16px;
+  height: 16px;
+  transition: transform .5s;
+  transform: scaleY(1) !important;
+}
+.month-image[alt='-']{
+  transform: scaleY(-1) !important;
+}
+.archive-month-topics{
+  display: block;
+  overflow: hidden;
+}
+.archive-month-topics .archive-row{
+  display: block;
+  overflow: hidden;
+  transition: margin .25s, transform .25s .25s;
+  margin-top: 0px;
+  height: 20px;
+}
+.archive-month-topics.archive-month-collapsed .archive-row{
+  margin-top: -20px;
+  transform: scaleY(0);
+  transition: margin .25s .25s, transform .25s;
+}
+/*Spoiler activator by happycupcake*/
+.bbcode_spoiler{
+    background: #444;
+    transition: color 0s 10000000000000s;
+}
+.bbcode_spoiler:active {
+    transition: all 0s;
+    color: white;
+}
