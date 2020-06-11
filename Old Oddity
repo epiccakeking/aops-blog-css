@@ -1,0 +1,230 @@
+/*Old Oddity by happycupcake.
+Keep this entire comment if the code is used in part or as a whole.*/
+#wrapper{
+  background-image: none !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+#navigation_box{
+  position: fixed;
+  top: 0px;
+  background-color: black !important;
+  height: 20px !important;
+  z-index: 100000000000000000000000 !important;
+  border: none !important;
+  overflow: hidden;
+}
+.archive-row > a{
+  color: white;
+}
+.cmty-forum-admin > a{
+  color: #990000 !important;
+}
+.cmty-forum-mod > a{
+  color: #009900 !important;
+}
+.entrywrap, .comment{
+  background-color: rgba(255,255,255,0.2) !important;
+  color: white;
+  border: none !important;
+}
+
+#contrib-widget{
+  position: relative !important;
+  top: 20px !important;
+  left: 0px !important;
+  display: table-caption !important;
+  margin: 0px !important;
+  margin-top: 20px !important;
+}
+#side {
+   display: table !important;
+}
+body{
+  background-color: black !important;
+}
+.description, .widget-title, .archive-month-header{
+  color: white;
+}
+#message{
+  background-color: rgba(255,255,255,0.2) !important;
+  border: transparent !important;
+  color: white;
+  width: 100% !important;
+}
+#shouts-widget > .widget-content > .blog-shout-wrapper{
+  border: transparent !important;
+}
+.blog-shout.row1{
+  background-color: rgba(255,255,255,0.2) !important;
+}
+.blog-shout.row2{
+  background-color: rgba(255,255,255,0.25) !important;
+}
+.blog-shout{
+  color: white;
+}
+/*Some code that does a ton of stuff to fix python, quotes, and hides being white. For now doesn't affect feed*/
+#main .cmty-hide-content, #main .cmty-poll-display, #main .bbcode_quote{
+  background-color: rgba(255,255,255,0.1) !important;
+}
+#main .python, [id*="updated-pywindow"] > *{
+  filter: invert(100%) !important;
+}
+#main [id*="updated-pywindow"] > [id*="updated-pywindow"].error{
+  color: white !important
+}
+#main .bbcode_quote > *{
+  color: white;
+}
+#search-widget .widget-settings{
+  display: none !important;
+}
+#search-widget{
+  background-color: rgba(255,255,255,0.35) !important;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: none !important;
+  position: fixed !important;
+  top: 20px !important;
+  left: 0px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+#blog_searchform > * > *{
+  border: none !important;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0px !important;
+  margin: 0px !important;
+  border: none !important;
+}
+#blog_searchform > *{
+  border: none !important;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0px !important;
+  margin: 0px !important;
+  border: none !important;
+  filter: invert(100%)
+}
+#search-widget > *{
+  padding: 0px !important;
+  margin: 0px !important;
+  width: auto !important;
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: none !important;
+}
+#search-widget > * > *{
+  padding: 0px !important;
+  margin: 0px !important;
+  width: auto;
+  height: auto;
+}
+.widget-content{
+  color: white;
+}
+/*Username mod/admin colors*/
+#feed-wrapper .cmty-post-username>a{
+  color: black !important;
+}
+#feed-wrapper .cmty-post-username.cmty-forum-admin>a{
+  color: #990000 !important;
+}
+#feed-wrapper .cmty-post-username.cmty-forum-mod>a{
+  color: #009900!important;
+}
+#header{
+  background: transparent;
+}
+/* ~ ~ ~ ~ ~ Modals ~ ~ ~ ~ ~ */
+.aops-modal-frame{
+  position: fixed !important;
+  z-index: 1000000 !important;
+  border-radius: 7px 7px 3px 3px !important;
+  margin-top: 26px;
+  padding: 0px 4px 4px 4px;
+  border: 1px solid #1a1a1a;
+  background: #353535;
+  overflow: hidden;
+}
+.aops-modal-title, .aops-modal-noscroll:first-child::before{
+  content: '';
+  font-size: 16px !important;
+  text-align: center !important;
+  line-height: 28px;
+  color: white;
+  height: 28px !important;
+  margin-left: -4px;
+  margin-right: -4px;
+  display: block;
+  width: calc(100% + 8px);
+  background: linear-gradient(#3d3d3d, #343434) !important;
+}
+.aops-close-x.clickable{
+  background: url(https://i.imgur.com/EyEW7DZ.png);
+  margin: 0px;
+  position: absolute !important;
+  top: 0px;
+  right: 0px !important;
+}
+.aops-close-x::before{
+  display: none;
+}
+.aops-modal-wrapper{
+  display: contents !important;
+}
+.aops-modal-content-wrapper{
+  box-shadow: none;
+  color: white;
+}
+.aops-modal-mask{
+  display: none !important;
+}
+.aops-modal-footer{
+  background: none !important;
+}
+/*Comment text*/
+.post-comment:before{
+  content: 'Comment';
+}
+#main > div:nth-child(2n-100) .post-comment:before{
+  content: 'Give me a comment';
+}
+#main > div:nth-child(3n-100) .post-comment:before{
+  content: 'Comments please';
+}
+#main > div:nth-child(4n-100) .post-comment:before{
+  content: 'Please give me a comment.';
+}
+#main > div:nth-child(5n-100) .post-comment:before{
+  content: 'Comment please?';
+}
+#main > div:nth-child(6n-100) .post-comment:before{
+  content: 'Please comment...';
+}
+#main > div:nth-child(7n-100) .post-comment:before{
+  content: 'Share your thoughts';
+}
+#main > div:nth-child(8n-100) .post-comment:before{
+  content: 'Please be kind and comment.';
+}
+#main > div:nth-child(9n-100) .post-comment:before{
+  content: 'Would you be so kind ot give me a comment?';
+}
+#main > div:nth-child(10n-100) .post-comment:before{
+  content: 'I would like to hear your thoughts.';
+}
+#main > div:nth-child(11n-100) .post-comment:before{
+  content: 'Feel free to comment.';
+}
+#main > div:nth-child(12n-100) .post-comment:before{
+  content: 'Hi.';
+}
