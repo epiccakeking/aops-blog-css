@@ -1,0 +1,161 @@
+/*Style variables*/
+:root{
+  --entrybg: lightgray;
+}
+/*Entries*/
+.entrywrap, .entrywrap .cmty-post-poll, .entrywrap .cmty-post-poll *{
+  border: none !important;
+}
+#main > div{
+  display: inline-block !important;
+}
+.entry{
+  background: var(--entrybg) !important;
+  width: 350px !important;
+  margin: 5px !important;
+  height: 550px;
+  overflow-y: auto !important;
+  padding-bottom: 0px !important;
+}
+.entrywrap{
+  height: auto !important;
+  padding-bottom: 0px !important;
+}
+.entrywrap, .entrywrap *:not(.cmty-poll-result-bar){
+  background: transparent !important;
+}
+/*Some neccesary stuff*/
+html, body, #wrapper{
+  width: 100vw !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  overflow-x: hidden !important;
+}
+#main{
+  width: calc(100% - 268px) !important;
+  margin: 0px !important;
+  padding: 10px;
+}
+
+/*Entry footer stuff*/
+.efooter{
+  background: var(--entrybg) !important;
+  position: sticky;
+  bottom: 0px;
+}
+
+/*Fixes scrollbar from long words*/
+.entrywrap{
+  word-wrap: break-word;
+}
+/*Side small screen*/
+@keyframes scrolltext{
+  0%{
+    left: 0%;
+  }
+  100%{
+    left: -300%;
+  }
+}
+
+@media (max-width:650px){
+  #wrapper{
+    background: none;
+  }
+  #side{
+    position: absolute;
+    z-index: 1000000;
+    right: 0px;
+    background: white;
+    overflow: hidden !important;
+  }
+  #side:not(:hover){
+    width: 0px;
+  }
+  #side::before{
+    content: "Click/Hover to show sidebar" !important;
+    position: fixed !important;
+    right: 0px;
+    top: 150px;
+  }
+  #side:hover::before{
+    display: none;
+  }
+  #main{
+    width: 100% !important;
+  }
+}
+/*COmments and replying*/
+.blog-posts-box, .blog-reply-window{
+  width: 100% !important;
+}
+
+/*============*\
+|----Navbar----|
+\*============*/
+#navigation_box{
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
+  background: white;
+}
+#left_navigation_box{
+  display: none !important;
+}
+#right_navigation_box, #right_navigation_box *{
+  color: black !important;
+}
+/*blog info icon*/
+.blog-info{
+  font-size: 0px !important;
+}
+.blog-info:after{
+  font-size: 10pt !important;
+  font-family: "AoPS";
+  content: "3";
+}
+/*Tags (Categories). Very messy.*/
+#side > div:nth-child(5){
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100000;
+  width: 100px;
+}
+#side > div:nth-child(5) > .widget-header{
+  width: 100px;
+  overflow: hidden;
+  height: 20px;
+  padding: 1px !important;
+}
+
+#side > div:nth-child(5) > .widget-header:before{
+  content: "Categories";
+  border: black 1px solid;
+  display: block;
+  width: 100% !important;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 12px;
+  font-size: 15px;
+
+}
+
+#side > div:nth-child(5) > .widget-content{
+  display: none !important;
+  width: 100vw !important;
+  height: auto !important;
+  overflow: hidden;
+  background-color: white !important;
+}
+#side > div:nth-child(5):hover > .widget-content{
+  display: block !important;
+}
+.blog-tags-wrapper, .blog-tags-wrapper > .cmty-itembox{
+  height: auto !important;
+}
+.blog-tags-wrapper .aops-scroll-content{
+  width: 100% !important;
+}
