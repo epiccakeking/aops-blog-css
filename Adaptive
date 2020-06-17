@@ -1,5 +1,5 @@
-/*Adaptive (v1.0) by happycupcake
-Do not remove this statement if you use the code in part or as a whole.*/
+/*Adaptive (v1.0) by epiccakeking/happycupcake
+Licensed under the MIT License (see https://github.com/epiccakeking/aops-blog-css/blob/master/LICENSE)*/
 #wrapper{
   width: 100%;
   background: none;
