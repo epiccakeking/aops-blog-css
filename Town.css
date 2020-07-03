@@ -1,0 +1,149 @@
+/*Town.css (v0.1) by epiccakeking (https://github.com/epiccakeking).
+Licensed under the MIT License.
+
+MIT License
+
+Copyright (c) 2020 epiccakeking
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+/*Heavily inspired by City.css by NeoMathematicalKid.*/
+#wrapper, #header{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  background: none;
+}
+/*Header*/
+#header{
+  height: 50vh;
+  border: none;
+  clip-path: inset(0 0 0 0);
+}
+#header > a > h1{
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  position: fixed;
+  line-height: 50vh;
+  font-size: 5rem;
+  text-decoration: none;
+  color: white;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/8/8d/Frog_on_palm_frond.jpg');
+  background-size: cover;
+  background-position: center;
+}
+/*Navigation header*/
+#navigation_box {
+  height: 2rem;
+  box-shadow: 0px 1px 0px #aaa;
+  position: fixed;
+  background-color: white;
+  padding: 0px;
+  top: 0px;
+  border: none;
+  z-index: 2;
+}
+#navigation_box > *{
+    font-size: 0px;
+}
+#navigation_box > * a{
+  color: black !important;
+  font-size: 1.25rem !important;
+  line-height: 2rem;
+  padding: 0 .25rem;
+  transition: box-shadow .2s;
+  box-shadow: 0px 0rem 0px #aaa inset;
+}
+#navigation_box > * a:hover{
+  box-shadow: 0px .2rem 0px #aaa inset;
+}
+#left_navigation_box:not(:hover) a:last-child {
+  box-shadow: 0px .2rem 0px #aaa inset;
+}
+#right_navigation_box{
+  right: 2rem;
+}
+/*Main*/
+#blog_searchform::before{
+  content: "";
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 10000000;
+  height: 2rem;
+  width: 2rem;
+  background: url("https://fonts.gstatic.com/s/i/materialicons/search/v6/24px.svg") #ddd;
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+#blog_keywords{
+  display: block;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 1000000;
+  padding: 0px;
+  height: 2rem;
+  width: 2rem;
+  transition: right .5s, width .5s;
+  border: 0px;
+  background: #ddd;
+}
+#blog_keywords:focus{
+  right: 2rem;
+  width: 13rem;
+  color: black;
+}
+/*Side*/
+#side{
+  margin-right: -100px;
+  width: 0px;
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.avatar > img{
+  position: absolute;
+  top: 50vh;
+  margin-top: -40px;
+  left: 50%;
+  margin-left: -40px;
+  height: 82px;
+  width: 82px;
+  background: white;
+  border: 1px solid #aaa;
+  border-radius: 41px;
+  z-index: 1;
+}
+/*Main*/
+#main{
+  width: 100%;
+  padding: 0 20%;
+}
+@media (max-width: 800px){
+  #main{
+    padding: 0px 10px;
+  }
+}
