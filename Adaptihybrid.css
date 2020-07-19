@@ -1,0 +1,178 @@
+/*Adaptihybrid.css (v1.0) by epiccakeking/happycupcake.
+
+Licensed under the MIT License (see below).
+
+MIT License
+
+Copyright (c) 2020 epiccakeking
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+#wrapper{
+  width: 100%;
+  background: none;
+}
+.entrywrap{
+  background: none !important;
+  border: none !important;
+  margin: 0px !important;
+}
+.entry{
+  background: white;
+  box-shadow: 0px 5px 10px rgba(0,0,0,.75);
+  margin-bottom: 20px;
+  border: none !important;
+  padding: 10px !important;
+}
+#main{
+  width: calc(100% - 270px);
+  padding: 10px;
+  padding-left: 270px;
+}
+#side{
+  width: 260px;
+}
+@media (max-width:1200px){
+  .avatar > img{
+    top: 20px !important;
+  }
+  #side{
+    left:-270px !important;
+    position: fixed;
+    top: 2.5rem;
+    padding-top: 100px;
+    bottom: 0px;
+    left: 0px;
+    background: #f3f3f3;
+    z-index: 100;
+    width: 270;
+    height: auto;
+    overflow: auto;
+    overscroll-behavior: contain;
+  }
+  #side::before{
+    content: '>';
+    position: fixed;
+    left: 0px;
+    top: 80px;
+    font-size: 3rem;
+    background: #f3f3f3;
+    height: 2rem;
+    line-height: 2rem;
+    z-index: 100;
+    border-radius: 0rem 1rem 1rem 0rem;
+    box-shadow: 0px 0px 0.5rem rgba(0,0,0,.5);
+  }
+  #side:hover{
+    left: 0px !important;
+  }
+  #side:hover::before{
+    display: none;
+  }
+  #main{
+    width: 100%;
+    padding: 10px;
+  }
+}
+/*Header*/
+#header{
+    /*You can set the background image on the next line*/
+    background: url('https://i.imgur.com/b1bQMmo.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    height: 50vh;
+    overflow: hidden;
+    padding-top: 0;
+    border: none;
+}
+#header > a{
+  padding-top: 25vh;
+  height: 50vh !important;
+  display: block;
+}
+#header > a > h1{
+    margin-top:-2.5rem;
+    font-size: 5rem;
+    text-decoration: none;
+    color: white; /*Set to whatever color fits*/
+}
+#content{
+    position: relative;
+    z-index: 100;
+    margin-top: 50vh;
+    min-height: 50vh;
+    background: white;
+    box-shadow: 0px 0px 5rem black;
+    border-top: 2px solid #aaa;
+}
+/*Navigation header*/
+#navigation_box {
+    height: 2.5rem;
+    border-bottom: 2px solid #aaaa;
+    position: fixed;
+    background-color: white;
+    padding: 0px;
+}
+#left_navigation_box,
+#right_navigation_box{
+    font-size: 0px;
+}
+#left_navigation_box a,
+#right_navigation_box a{
+    color: black !important;
+    font-size: 1.25rem !important;
+    padding: .75rem;
+    transition: box-shadow .2s;
+    box-shadow: 0px 0rem 0px #aaa inset;
+}
+#left_navigation_box a:hover,
+#right_navigation_box a:hover{
+    box-shadow: 0px .2rem 0px #aaa inset;
+}
+#left_navigation_box:not(:hover) a:last-child {
+    box-shadow: 0px .2rem 0px #aaa inset;
+}
+/*Wrapper*/
+.avatar > img{
+    position: absolute;
+    top: -41px;
+    left: 50%;
+    margin-left: -40px;
+    height: 84px;
+    width: 84px;
+    background: white;
+    border: 2px solid #aaa;
+    border-radius: 41px;
+}
+.entry > h1,
+.entry > h2{
+    text-align: center;
+}
+.entry > h2 img{
+    display: none;
+}
+#post-new-entry-p{
+    height: 30px;
+    margin: -30px 0px 0px 15px;
+}
+#main{
+    padding-top: 40px;
+}
