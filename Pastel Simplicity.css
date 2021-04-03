@@ -1,0 +1,149 @@
+/* Pastel Simplicity by epiccakeking.
+Licensed under the MIT license (see below)
+
+MIT License
+
+Copyright (c) 2021 epiccakeking
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+:root{
+  --color1: #c9e4f7;
+  --color2: #ecb0b0;
+}
+
+#navigation_box{
+  background: var(--color1);
+  border: none;
+  left: 10px;
+  right: 10px;
+  width: auto;
+}
+
+#navigation_box *{
+  color: black !important;
+}
+
+#wrapper{
+  border: none;
+  padding: 10px;
+  padding-top: 35px;
+  width: 100%;
+  background: var(--color2);
+}
+
+#main{
+  width: calc(100% - 280px);
+}
+
+.entrywrap{
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 10px 0 0 0 !important;
+}
+
+.entry{
+  background: var(--color1);
+  border: none;
+  padding: 10px !important;
+}
+
+#header{
+  background: var(--color1);
+  border: none;
+}
+
+#side{
+  background: var(--color1);
+  margin-top: 13px;
+  padding: 10px;
+  width: 270px !important;
+}
+
+#post-new-entry-p{
+  background: var(--color1);
+}
+
+#message{
+  border: none;
+  background: var(--color2);
+  resize: none;
+}
+
+#search-widget > *{
+  background: none !important;
+}
+#blog_searchform{
+  width: 240px;
+}
+#blog_searchform > fieldset{
+  border: none !important;
+}
+#blog_searchform input[name="keywords"]{
+  width: 180px;
+  display: inline !important;
+}
+#blog_searchform > fieldset > div{
+  width: 60px;
+  display: inline !important;
+}
+#search-widget .widget-settings{
+  display: none !important;
+}
+/*
+Shouts
+*/
+.blog-shout-wrapper{
+  margin-top: 10px !important;
+  background: var(--color2);
+  border: none;
+}
+.blog-shout-wrapper > .aops-scroll-outer{
+  padding: 0px;
+}
+
+.blog-shout{
+  width: 100% !important;
+}
+/*
+Tags
+*/
+.blog-shout-wrapper .aops-scroll-content {
+  width: 100% !important;
+}
+.blog-shout-wrapper .aops-scroll-bar{
+  display: none !important;
+}
+.cmty-item-tag{
+  background-color: var(--color2) !important;
+  color: black !important;
+}
+/*
+Tags (sidebar)
+*/
+.blog-tags-wrapper{
+  border: none;
+}
+.blog-tags-wrapper .aops-scroll-inner,
+.blog-tags-wrapper .aops-scroll-outer,
+.blog-tags-wrapper .cmty-itembox{
+  height: auto !important;
+  overflow: visible !important;
+}
