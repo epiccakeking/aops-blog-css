@@ -1,0 +1,132 @@
+/*
+
+BSD Zero Clause License
+
+Copyright (C) 2022 by epiccakeking
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+*/
+
+:root {
+	--title-color: #e9abff;
+}
+
+body {
+	background: black;
+}
+
+#wrapper {
+	width: 100%;
+	padding: 3rem;
+	border: none;
+	background: none;
+}
+
+#content {
+	display: flex;
+}
+
+#main {
+	width: auto;
+	min-width: 0;
+	flex: 1;
+	margin-right: 3rem;
+}
+
+#side {
+	width: 20rem;
+}
+
+div.entry,
+#header,
+#side > div.widget,
+#side > div,
+#navigation_box,
+.blog-posts-box .comment {
+	background: #000f36;
+	border: 0.2rem solid #ff9bf4;
+	color: white;
+	border-radius: 2rem;
+	box-shadow: 0 0 2rem 0 #c700ffab;
+	padding: 1rem;
+}
+
+#navigation_box {
+	border-radius: 0 0 2rem 2rem;
+	position: static;
+	margin: -1rem 3rem 0;
+	height: 3rem;
+	width: auto;
+}
+
+#side > div.widget,
+#side > div {
+	margin: 0 0 3rem;
+	width: 100%;
+}
+
+#header,
+.entry,
+.blog-posts-box .comment {
+	margin-bottom: 3rem;
+}
+
+div.entrywrap {
+	background: none;
+	border: none;
+	color: white;
+}
+
+#post-new-entry-p {
+	height: 0;
+	margin-top: -2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.blog-shout {
+	background: none;
+}
+
+#side fieldset {
+	border: none;
+}
+
+#search-widget > div {
+	background: none;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+#search-widget .widget-settings,
+#search-widget .widget-footer {
+	display: none;
+}
+
+#blog_searchform > fieldset {
+	display: flex;
+	width: 100%;
+}
+
+#blog_keywords {
+	flex: 1;
+	margin-right: 1rem;
+}
+
+#search-widget > .widget-content {
+	width: 100%;
+}
+
+#header h1 {
+	color: var(--title-color);
+	font-size: 3rem;
+	font-family: sans-serif;
+}
+
+.entry > h1 > a,
+.blog-num-comments {
+	color: var(--title-color);
+}
